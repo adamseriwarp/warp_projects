@@ -3,7 +3,7 @@
 
 A comprehensive geospatial analysis tool for identifying strategic market expansion opportunities using Core Based Statistical Area (CBSA) data, quote demand patterns, and intelligent corridor optimization.
 
-## 🎯 Project Overview
+## Project Overview
 
 This project provides Warp with a data-driven framework for expanding logistics services beyond current CBSA coverage areas. By analyzing quote demand patterns in non-CBSA zip codes and implementing smart corridor analysis, the tool identifies optimal expansion routes that maximize market penetration while minimizing operational complexity.
 
@@ -14,7 +14,7 @@ This project provides Warp with a data-driven framework for expanding logistics 
 - **Real-time Filtering**: Configurable distance and performance thresholds
 - **Export Capabilities**: Comprehensive CSV export for operational planning
 
-## 🏗️ Technical Architecture
+## Technical Architecture
 
 ### Core Components
 1. **`cbsa_color_coded_corridor_map.py`** - Main analysis engine and map generator
@@ -30,7 +30,7 @@ geopandas>=0.10.0
 scikit-learn>=1.0.0
 ```
 
-## 📊 Analysis Logic & Methodology
+## Analysis Logic & Methodology
 
 ### 1. CBSA Population-Based Prioritization
 - Identifies top 75 CBSAs by population (unbiased by current quote volume)
@@ -76,7 +76,7 @@ if point_to_line_distance <= dynamic_width:
 - **Corridor Zones**: Orange overlay for expansion route visualization
 - **Infrastructure**: Crossdock locations and CBSA centroids marked
 
-## 🎛️ Interactive Controls
+## Interactive Controls
 
 ### Distance Filtering
 - **Range**: 5-200 miles from nearest CBSA coverage
@@ -92,7 +92,7 @@ if point_to_line_distance <= dynamic_width:
 - **Base Width**: 10-50 miles (corridor inclusion radius)
 - **Dynamic Adjustment**: Real-time recalculation based on parameter changes
 
-## 📈 Export Dataset Column Descriptions
+## Export Dataset Column Descriptions
 
 ### Geographic Identifiers
 | Column | Description |
@@ -132,7 +132,7 @@ if point_to_line_distance <= dynamic_width:
 | `Nearest_Crossdock_Name` | Name of closest Warp crossdock facility |
 | `Distance_to_Nearest_Crossdock_Miles` | Distance to nearest crossdock (miles) |
 
-## 🚀 Usage Instructions
+## Usage Instructions
 
 ### 1. Data Preparation
 Ensure the following files are in the `data/raw/` directory:
@@ -156,30 +156,6 @@ python3 cbsa_color_coded_corridor_map.py
 - Click "Export Filtered Zip Codes" button
 - CSV file includes all analysis metrics and corridor status
 
-## 📋 Key Insights & Applications
-
-### Market Opportunity Identification
-- **9,005 non-CBSA ZIP codes** identified as potential expansion targets
-- **Distance-based prioritization** for phased rollout planning
-- **Performance benchmarking** against established CBSA markets
-
-### Strategic Expansion Planning
-- **Corridor optimization** reduces per-stop expansion costs
-- **Infrastructure integration** with existing crossdock network
-- **Risk assessment** through statistical performance analysis
-
-### Operational Benefits
-- **Route efficiency** through intermediate ZIP inclusion
-- **Market penetration** along expansion corridors
-- **Competitive advantage** in underserved markets
-
-## 🔄 Future Enhancements
-
-- **Automated data refresh** capabilities
-- **Predictive demand modeling** for market forecasting
-- **Cost-benefit analysis** integration
-- **Multi-modal transportation** optimization
-
 ---
 
-*This analysis framework represents a significant advancement in logistics market analysis, combining traditional geographic methods with modern data science techniques to drive strategic business growth.*
+
