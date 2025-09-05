@@ -1,0 +1,69 @@
+# Data files (exclude sensitive business data)
+data/raw/*.csv
+data/processed/*.csv
+*.csv
+
+# Large shapefile data
+data/shapefiles/*.shp
+data/shapefiles/*.dbf
+data/shapefiles/*.shx
+data/shapefiles/*.prj
+data/shapefiles/*.cpg
+
+# Generated HTML maps (can be regenerated)
+*.html
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
